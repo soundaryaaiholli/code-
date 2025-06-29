@@ -1,0 +1,14 @@
+function vs block scope with var vs let vs const : example
+letglobalvar = "i am global";//global variable
+function textscope()
+{
+let functionvar = "i am inside a function";// Function scope
+if(true)
+{
+let blockvar = "i am inside if block";//block scope
+console.logblockvar);//works
+}
+console.log(blockvar);//Errori canot accesss block outside its block
+}
+testscope();
+console.log(globalvar);//works (global variable)//console.log(functionvar);//errori canot access functionvar outside function
